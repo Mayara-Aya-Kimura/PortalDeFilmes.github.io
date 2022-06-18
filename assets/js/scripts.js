@@ -3,14 +3,14 @@ $(function() {
     // VARIABLES
 
     var API = "https://api.themoviedb.org/3";
-    var KEY = "4ba13f07eb7d66f818df7d9bf080d2e8";
+    var KEY = "48e8c458c9ba69ffcf26e51edd2ca34b";
     var URL_IMAGE = "http://image.tmdb.org/t/p/";
     var BACKDROP = URL_IMAGE + "original";
     var POSTER = URL_IMAGE + "w342";
     
-    var getMovies = API + "/discover/movie" + "?api_key=" + KEY + "&language=pt-br";
-    var getUltimos = API + "/discover/tv" + "?api_key=" + KEY + "&language=pt-br";
-    var getCinema = API + "/discover/tv" + "?api_key=" + KEY + "&language=pt-br";
+    var getMovies = API + "/movie/popular" + "?api_key=" + KEY + "&language=pt-br";
+    var getUltimos = API + "/trending/movie/week" + "?api_key=" + KEY + "&language=pt-br";
+    var getCinema = API + "/movie/now_playing" + "?api_key=" + KEY + "&language=pt-br";
 
     // AJAX
 
